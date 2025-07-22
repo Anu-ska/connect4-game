@@ -1,0 +1,74 @@
+/* General page layout and background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #92FFC0 0%, #002661 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main title styling */
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Grid layout for the board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 60px); /* 7 columns */
+  grid-template-rows: repeat(6, 60px);    /* 6 rows */
+  gap: 5px;
+  background: #0044cc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Each cell (circle slot) */
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Slight zoom on hover */
+.cell:hover {
+  transform: scale(1.1);
+}
+
+/* Red player's piece */
+.red {
+  background-color: red;
+}
+
+/* Yellow player's piece */
+.yellow {
+  background-color: yellow;
+}
+
+/* Text area to show player's turn or win message */
+.message {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* Reset button styling */
+#reset-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connect 4 Game</title>
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main title of the game -->
+  <h1>Connect 4 Game</h1>
+
+  <!-- Game board container -->
+  <div class="board" id="board"></div>
+
+  <!-- Message display area (e.g. "Player Red's Turn") -->
+  <div class="message" id="message">Player Red's Turn</div>
+
+  <!-- Button to reset the game -->
+  <button id="reset-btn">Reset Game</button>
+
+  <!-- Sound elements for different game actions -->
+  <audio id="drop-red" src="red.wav"></audio>
+  <audio id="drop-yellow" src="yellow.wav"></audio>
+  <audio id="win_sound" src="win.wav"></audio>
+  <audio id="reset-sound" src="reset_chime.mp3"></audio>
+
+  <!-- Link to the game logic JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
